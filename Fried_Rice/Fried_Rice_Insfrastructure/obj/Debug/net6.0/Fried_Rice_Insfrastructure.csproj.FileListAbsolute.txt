@@ -1,0 +1,15 @@
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\bin\Debug\net6.0\Fried_Rice_Insfrastructure.deps.json
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\bin\Debug\net6.0\Fried_Rice_Insfrastructure.dll
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\bin\Debug\net6.0\Fried_Rice_Insfrastructure.pdb
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\bin\Debug\net6.0\Fried_Rice_DomainModelEntity.dll
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\bin\Debug\net6.0\Fried_Rice_DomainModelEntity.pdb
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.csproj.AssemblyReference.cache
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.AssemblyInfoInputs.cache
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.AssemblyInfo.cs
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.csproj.CoreCompileInputs.cache
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.csproj.CopyComplete
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.dll
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\refint\Fried_Rice_Insfrastructure.dll
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\Fried_Rice_Insfrastructure.pdb
+D:\C#example\Fried_Rice\Fried_Rice_Insfrastructure\obj\Debug\net6.0\ref\Fried_Rice_Insfrastructure.dll

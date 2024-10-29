@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Fried_Rice_Api.props" />
+</Project>

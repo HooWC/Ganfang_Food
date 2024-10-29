@@ -1,0 +1,14 @@
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.csproj.AssemblyReference.cache
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.AssemblyInfoInputs.cache
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.AssemblyInfo.cs
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.csproj.CoreCompileInputs.cache
+D:\C#example\Fried_Rice_Api\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.deps.json
+D:\C#example\Fried_Rice_Api\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.runtimeconfig.json
+D:\C#example\Fried_Rice_Api\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.dll
+D:\C#example\Fried_Rice_Api\DomainModelEntity\bin\Debug\net6.0\DomainModelEntity.pdb
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.dll
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\refint\DomainModelEntity.dll
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.pdb
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\DomainModelEntity.genruntimeconfig.cache
+D:\C#example\Fried_Rice_Api\DomainModelEntity\obj\Debug\net6.0\ref\DomainModelEntity.dll

@@ -1,0 +1,189 @@
+﻿@using Fried_Rice.Controllers;
+@{
+	ViewData["Title"] = "MoreProduct";
+	Layout = null;
+}
+@{
+	var login = LoginController.login;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="~/css/Product.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<h1 id="food_type" style="display:none">@ViewBag.Type</h1>
+
+	<section class="navigation">
+		<div class="nav-container">
+			<div class="brand">
+				<a href="~/Home/Home"><img src="~/Image/logo.png"></a>
+			</div>
+			<nav>
+				<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+				<ul class="nav-list">
+					<li>
+						<a href="~/Home/Home">首页</a>
+					</li>
+					<li>
+						<a href="#!">菜单</a>
+						<ul class="nav-dropdown">
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=homefood">家常菜</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=breah">面包</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=sweet">甜点</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=xiaochi">小吃</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=getMore">更多选择</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">其他</a>
+						<ul class="nav-dropdown">
+							<li class="drop_li">
+								<a href="~/CartPage/CartPay">购物车</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/TransactionPage/Index">购买记录</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="~/Home/About">关于我们</a>
+					</li>
+					<li>
+						@if (login)
+						{
+							<a href="~/Login/OutLogin">退出登入</a>
+						}
+						else
+						{
+							<a href="~/Login/Index">登入/注册</a>
+						}
+					</li>
+					<li class="last_li_avatar">
+						@if (login)
+						{
+							<img class="avatar_p" src="~/Image/默认Ava.jpg">
+						}
+						else
+						{
+							<img class="avatar" src="~/Image/默认头像.png">
+						}
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+
+
+	<div class="food_all_menu">
+
+
+
+		<div class="show_food">
+
+			<div class="tag">
+				<ul class="movie-gen">
+					<li><a href="~/ProductPage/MoreProduct?type=炒饭" class="watch-btn_tag"><h3>炒饭</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=homefood" class="watch-btn_tag"><h3>家常菜</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=面" class="watch-btn_tag"><h3>面</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=breah" class="watch-btn_tag"><h3>面包</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=披萨" class="watch-btn_tag"><h3>披萨</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=sweet" class="watch-btn_tag"><h3>甜点</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=饭" class="watch-btn_tag"><h3>饭</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=鸡肉" class="watch-btn_tag"><h3>炸鸡</h3></a></li>
+					<li><a href="~/ProductPage/MoreProduct?type=xiaochi" class="watch-btn_tag"><h3>小吃</h3></a></li>
+					<li class="last_tag"><a href="~/ProductPage/MoreProduct?type=getMore" class="watch-btn_tag"><h3>更多</h3></a></li>
+				</ul>
+			</div>
+
+			<div class="con" id="con">
+			</div>
+		</div>
+
+		<div class="text">
+			<h2 class="h1_title">
+				热门文章</h1>
+				<div class="text_box_1">
+					<p><span class="box_num">1</span>关于榴莲 有些事你未必知道</p>
+					<p><span class="box_num">2</span>喝银耳汤可以补充胶原蛋白？</p>
+					<p><span class="box_num">3</span>气炸锅鱼条用这招 别提有多香了</p>
+					<p><span class="box_num">4</span>烹饪四季豆注意这些细节 更加香脆好吃</p>
+					<p><span class="box_num">5</span>蛋糕出炉太干了！教你两大妙招挽救</p>
+				</div>
+
+				<h2 class="h1_title">商家推荐</h2>
+				<div class="text_box_2">
+					<div class="part_box_2">
+						<div class="list-item">
+							<img src="https://d3l76hx23vw40a.cloudfront.net/recipe/bk186-024.jpg">
+							<strong>黄金炒饭</strong>
+						</div>
+						<div>
+							<p>黄金炒饭以其独特的口味而受到喜爱。经过炒制的米饭会变得松软，颗粒分明，吸收了各种调味料和食材的香味，使其口感丰富而美味。</p>
+						</div>
+					</div>
+
+					<div class="part_box_2">
+						<div class="list-item">
+							<img src="https://i.ytimg.com/vi/n6ZWHlXESHg/maxresdefault.jpg">
+							<strong>日式鳗鱼饭</strong>
+						</div>
+						<div>
+							<p>它是将烤鳗鱼切片放在一碗温热的蒸饭上，再淋上特制的鳗鱼酱汁，搭配其他配料而成的一道美味佳肴。</p>
+						</div>
+					</div>
+
+					<div class="part_box_2">
+						<div class="list-item">
+							<img src="https://imageproxy.icook.network/resize?background=255%2C255%2C255&height=1200&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F257355%2F221753fee684baa9.jpg&width=1200">
+							<strong>糖醋排骨</strong>
+						</div>
+						<div>
+							<p>它的外观呈现红亮油亮的色泽，肉质鲜嫩多汁，口感糯软，酸甜味道适中，深受人们喜爱。</p>
+						</div>
+					</div>
+
+					<div class="part_box_2">
+						<div class="list-item">
+							<img src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/382821/6cd3cc27ac64a26f.jpg">
+							<strong>传统香鸡排</strong>
+						</div>
+						<div>
+							<p>它的外观金黄酥脆，肉质鲜嫩多汁，带有浓郁的香味，成为了许多人的美食选择。</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="Ads_box_1">
+					<img class="Ads_1" src="~/Image/广告1.png">
+					<p>甘芳之食报道 @@ wengchin123456@gmail.com</p>
+				</div>
+
+
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="~/js/Product.js"></script>
+
+</body>
+</html>
+

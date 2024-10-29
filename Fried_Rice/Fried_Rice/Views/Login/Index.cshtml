@@ -1,0 +1,90 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="~/css/Login.css">
+</head>
+<body>
+
+
+	<section class="forms-section">
+		<h1 class="section-title"><a href="~/Home/Home">甘芳<span style="color:red;">之</span>食</a></h1>
+
+		@if (@ViewBag.tru == false)
+		{
+			<h4 class="section_h4">@ViewBag.user</h4>
+		}
+		else if (@ViewBag.tru == true)
+		{
+			<h4 class="section_h4">@ViewBag.user</h4>
+		}
+
+		<div class="forms">
+			<div class="form-wrapper is-active">
+				<button type="button" class="btn_swi switcher switcher-login">
+					登入
+					<span class="underline"></span>
+				</button>
+
+				<form class="form form-login" action="~/Login/Login" method="post">
+					<fieldset>
+						<legend>Please, enter your User id and password for login.</legend>
+						<div class="input-block">
+							<label for="login-id">User ID</label>
+							<input id="login-id" type="text" name="Username" required>
+						</div>
+						<div class="input-block">
+							<label for="login-password">Password</label>
+							<input id="login-password" type="password" name="Password" required>
+						</div>
+					</fieldset>
+					<button type="submit" class="btn-login">Login</button>
+				</form>
+
+			</div>
+
+
+			<div class="form-wrapper">
+				<button type="button" class="btn_swi switcher switcher-signup">
+					注册
+					<span class="underline"></span>
+				</button>
+				<form class="form form-signup" action="~/Login/SignUp" method="post">
+					<fieldset>
+						<legend>Please, enter your email, password and password confirmation for sign up.</legend>
+						<div class="input-block">
+
+							<label for="signup-password-confirm">User ID</label>
+							<input id="signup-password-confirm" type="text" name="Username" required>
+						</div>
+						<div class="input-block">
+							<label for="signup-password">Password</label>
+							<input id="signup-password" type="password" name="Password" required>
+						</div>
+						<div class="input-block">
+							<label for="signup-email">E-mail</label>
+							<input id="signup-email" type="email" name="Email" required>
+						</div>
+					</fieldset>
+					<button type="submit" class="btn-signup">Continue</button>
+				</form>
+			</div>
+
+
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="~/js/Login.js"></script>
+
+</body>
+</html>
+

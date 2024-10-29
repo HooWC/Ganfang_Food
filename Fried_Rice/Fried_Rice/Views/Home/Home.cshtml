@@ -1,0 +1,193 @@
+﻿@using Fried_Rice.Controllers;
+@{
+	ViewData["Title"] = "Home";
+	Layout = null;
+}
+@{
+	var login = LoginController.login;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="~/css/Home.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+	<section class="navigation">
+		<div class="nav-container">
+			<div class="brand">
+				<a href="~/Home/Home"><img src="~/Image/logo.png"></a>
+			</div>
+			<nav>
+				<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+				<ul class="nav-list">
+					<li>
+						<a href="~/Home/Home">首页</a>
+					</li>
+					<li>
+						<a href="#!">菜单</a>
+						<ul class="nav-dropdown">
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=homefood">家常菜</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=breah">面包</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=sweet">甜点</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=xiaochi">小吃</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/ProductPage/MoreProduct?type=getMore">更多选择</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">其他</a>
+						<ul class="nav-dropdown">
+							<li class="drop_li">
+								<a href="~/CartPage/CartPay">购物车</a>
+							</li>
+							<li class="drop_li">
+								<a href="~/TransactionPage/Index">购买记录</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="~/Home/About">关于我们</a>
+					</li>
+					<li>
+						@if (login)
+						{
+							<a href="~/Login/OutLogin">退出登入</a>
+						}
+						else
+						{
+							<a href="~/Login/Index">登入/注册</a>
+						}
+					</li>
+					<li class="last_li_avatar">
+						@if (login)
+						{
+							<img class="avatar_p" src="~/Image/默认Ava.jpg">
+						}
+						else
+						{
+							<img class="avatar" src="~/Image/默认头像.png">
+						}
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<section id="headstyle">
+		<div class="two_part_headstyle">
+			<div class="headstyle_word">
+				<div class="headstyle_h1">
+					<h1>我们为您提供</h1>
+					<h1 class="head_h1_big">食物</h1>
+				</div>
+				<div class="headstyle_p">
+					<p>美食能为我们带来愉悦,我们可以感受到食物的口感、味道和香气。</p>
+					<p>吃到一道美味的食物会引发味蕾的愉悦反应，给我们带来满足感和幸福感。</p>
+				</div>
+				<div class="headstyle_but">
+					<button class="headstyle_button">了解更多</button>
+				</div>
+			</div>
+			<div class="headimg">
+				<img src="~/Image/九宫格.png">
+			</div>
+		</div>
+	</section>
+
+	<section id="aboutstyle">
+		<div class="two_part_aboutstyle">
+			<div class="aboutimg">
+				<img src="~/Image/第二内容.png">
+			</div>
+
+			<div class="aboutstyle_word">
+				<div class="aboutstyle_h1">
+					<h1 class="about_h1_big">欢迎</h1>
+					<h1 class="about_h1_small">来到我们的甘芳网站</h1>
+				</div>
+				<div class="aboutstyle_p">
+					<p>美食是一种享受和独特的体验，它可以满足我们的味觉和视觉感官。</p>
+					<p>美食都是一种可以让我们感受到幸福和愉悦的方式。</p>
+				</div>
+				<div class="aboutstyle_but">
+					<button class="aboutstyle_button">立刻订购</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Site footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="row1 col-sm-12 col-md-6">
+					<h6>关于我们</h6>
+					<p class="text-justify">欢迎光临我们的餐厅！我们是一家致力于为顾客提供卓越美食和独特体验的高品质餐厅。无论您是寻找一顿美味的晚餐，还是想举办特殊场合的庆祝活动，我们都将以精湛的厨艺和周到的服务来满足您的期望。在我们的菜单上，您会发现精心挑选的美食佳肴，融合了创新的烹饪技巧和经典的口味，以满足各种口味偏好和饮食需求。我们与当地的农户和供应商合作，确保使用新鲜、优质的食材来打造每道菜品。</p>
+				</div>
+
+				<div class="row2 col-xs-6 col-md-3">
+					<h6>其他操作</h6>
+					<ul class="footer-links">
+						<li><a href="http://scanfcode.com/category/c-language/">登入/注册</a></li>
+					</ul>
+				</div>
+
+				<div class="row3 col-xs-6 col-md-3">
+					<h6>快速链接</h6>
+					<ul class="footer-links">
+						<li><a href="http://scanfcode.com/about/">首页</a></li>
+						<li><a href="http://scanfcode.com/contact/">菜单</a></li>
+						<li><a href="http://scanfcode.com/contribute-at-scanfcode/">购物车</a></li>
+						<li><a href="http://scanfcode.com/privacy-policy/">个人主页</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<hr>
+		</div>
+
+		<div class="container_fonter_bot">
+			<div class="fonter_bot row">
+				<div class="context_fonter col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">
+						Copyright &copy; 2023 All Rights Reserved by
+						<a href="#">Hoo Weng Chin</a>.
+					</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+						<li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fab fa-twitter"></i></i></a></li>
+						<li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src='~/js/GanFang.js'></script>
+
+</body>
+</html>
+
